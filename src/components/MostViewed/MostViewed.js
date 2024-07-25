@@ -7,7 +7,7 @@ function MostViewed() {
       <h3>Popular Content</h3>
       <div>
         {blogsData.map((blog) => (
-          <p>{blog.title}</p>
+          <p key={blog.id}>{blog.title}</p>
         ))}
       </div>
     </div>

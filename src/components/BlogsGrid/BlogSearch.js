@@ -5,16 +5,18 @@ import styles from "./BlogSearch.module.css";
 function BlogSearch({ onSearch }) {
   const [searchInput, setSearchInput] = React.useState("");
 
-  React.useEffect(() => {
-    onSearch(searchInput);
-  }, [searchInput, onSearch]);
+  function handleSearch(e) {
+    onSearch(e.target.value);
+    setSearchInput(e.target.value);
+  }
+
   return (
     <div className={styles.blogSearch}>
       <input
         type="search"
         placeholder="search blogs"
         value={searchInput}
-        onChange={(e) => setSearchInput(e.target.value)}
+        onChange={(e) => handleSearch(e)}
       />
       <IoSearch />
     </div>

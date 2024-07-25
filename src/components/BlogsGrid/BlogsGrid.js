@@ -21,16 +21,11 @@ function BlogsGrid() {
   }
 
   function sortBlogs(sortBy) {
-    console.log("sortBlogs function");
     if (sortBy === "mostViewed") {
       const sortedBlogs = blogs.sort((a, b) => a.views < b.views);
-      console.log("descending :");
-      console.log(sortedBlogs);
       setBlogs([...sortedBlogs]);
     } else if (sortBy === "leastViewed") {
       const sortedBlogs = blogs.sort((a, b) => a.views > b.views);
-      console.log("Ascending :");
-      console.log(sortedBlogs);
       setBlogs([...sortedBlogs]);
     }
   }
@@ -43,8 +38,8 @@ function BlogsGrid() {
       </div>
       <div className={styles.blogsGridWrapper}>
         {blogs.map((blog) => (
-          <Link to={"blog/" + blog.id}>
-            <BlogCard key={blog.id} {...blog} />
+          <Link to={"blog/" + blog.id} key={blog.id}>
+            <BlogCard {...blog} />
           </Link>
         ))}
       </div>

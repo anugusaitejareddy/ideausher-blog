@@ -32,6 +32,7 @@ function BlogHero() {
         <div className={styles.heroImagesWrapper}>
           {heroImages.map((image, index) => (
             <img
+              key={index}
               src={image.imageURL}
               alt=""
               style={{ flex: index === currentImage ? 1 : 0 }}
