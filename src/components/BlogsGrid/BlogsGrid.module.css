@@ -1,0 +1,18 @@
+.blogsGridWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 20px;
+  margin: 28px;
+}
+
+.blogsGridWrapper a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blogFilterWrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}

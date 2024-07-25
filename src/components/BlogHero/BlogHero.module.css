@@ -1,0 +1,15 @@
+.blogHeroWrapper {
+  height: 650px;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImagesWrapper {
+  display: flex;
+  width: 80%;
+  margin: 20px;
+}
+
+.heroImagesWrapper img {
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+.mostViewedWrapper {
+  align-self: start;
+
+  position: sticky;
+  top: 75px;
+  z-index: -1;
+  margin-top: 200px;
+  padding: 48px 12px;
+}
+
+.mostViewedWrapper h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  word-spacing: 10%;
+  color: hsl(333deg, 100%, 45%);
+  font-weight: 400;
+}
+
+.mostViewedWrapper p {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}

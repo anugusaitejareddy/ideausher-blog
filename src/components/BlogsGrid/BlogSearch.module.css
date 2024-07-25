@@ -1,0 +1,12 @@
+.blogSearch {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-left: 28px;
+}
+
+.blogSearch input {
+  padding: 6px;
+}
