@@ -10,7 +10,6 @@ function BlogCard({ imageURL, title, description, author, views, tags }) {
         <BlogAuthorImage author={author} />
         <h3>{title}</h3>
       </div>
-      <span>{author}</span>
       <p>{description}</p>
       <div className={styles.blogCardTagsWrapper}>
         {tags.map((tag, index) => (
@@ -19,6 +18,7 @@ function BlogCard({ imageURL, title, description, author, views, tags }) {
           </span>
         ))}
       </div>
+      <p>Author: {author}</p>
       <p>{views} Visits</p>
     </div>
   );
