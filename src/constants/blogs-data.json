@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["React", "JavaScript", "WebDevelopment", "Frontend"],
+    "author": "Emma",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -21,13 +21,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "First blog",
+    "title": "Getting Started with React: A Beginner's Guide",
     "views": 502
   },
   {
     "id": 2,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["Node.js", "Express", "API", "Backend"],
+    "author": "Liam",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -46,13 +46,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "Second blog",
+    "title": "Building RESTful APIs with Node.js and Express",
     "views": 712
   },
   {
     "id": 3,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["Docker", "DevOps", "Containers", "Tutorial"],
+    "author": "Olivia",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -71,13 +71,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "Third blog",
+    "title": "Understanding Docker: Containerization Made Simple",
     "views": 178
   },
   {
     "id": 4,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["Git", "VersionControl", "DevTools", "Tutorial"],
+    "author": "Noah",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -96,13 +96,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "Fourth blog",
+    "title": "Mastering Git: Tips and Tricks for Effective Version Control",
     "views": 898
   },
   {
     "id": 5,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["MachineLearning", "Python", "DataScience", "AI"],
+    "author": "Rohan",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -121,13 +121,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "The blog",
+    "title": "Introduction to Machine Learning with Python",
     "views": 666
   },
   {
     "id": 6,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["HTML5", "CSS3", "WebDesign", "ResponsiveDesign"],
+    "author": "Saanvi",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -146,13 +146,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "The blog",
+    "title": "Building a Responsive Website with HTML5 and CSS3",
     "views": 441
   },
   {
     "id": 7,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["Kubernetes", "DevOps", "Containers", "Orchestration"],
+    "author": "Kunal",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -171,13 +171,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "The blog",
+    "title": "An Overview of Kubernetes for Container Orchestration",
     "views": 880
   },
   {
     "id": 8,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["CI/CD", "DevOps", "Automation", "Jenkins"],
+    "author": "Isha",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -196,13 +196,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "The blog",
+    "title": "Implementing Continuous Integration and Continuous Deployment (CI/CD)",
     "views": 689
   },
   {
     "id": 9,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["GraphQL", "API", "WebDevelopment", "JavaScript"],
+    "author": "Rishi",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -221,13 +221,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "The blog",
+    "title": "Exploring GraphQL: A New Approach to APIs",
     "views": 489
   },
   {
     "id": 10,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["CloudComputing", "AWS", "Azure", "GoogleCloud"],
+    "author": "Priya",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -246,13 +246,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "The blog",
+    "title": "Understanding Cloud Computing: AWS vs. Azure vs. Google Cloud",
     "views": 906
   },
   {
     "id": 11,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["WebSecurity", "CyberSecurity", "BestPractices", "OWASP"],
+    "author": "Aarav",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -271,13 +271,13 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "The blog",
+    "title": "Securing Your Web Applications: Best Practices",
     "views": 291
   },
   {
     "id": 12,
-    "tags": ["tag1, tag2"],
-    "author": "Author",
+    "tags": ["DataStructures", "Algorithms", "JavaScript", "Coding"],
+    "author": "Vihaan",
     "subHeadings": [
       "sub heading 1",
       "sub heading 2",
@@ -296,7 +296,7 @@
     ],
     "description": "Reprehenderit sint cillum cillum ex ex eiusmod duis magna aute incididunt",
     "imageURL": "https://images.unsplash.com/photo-1721297014035-bc2c4309aa3e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "title": "The blog",
+    "title": "Introduction to Data Structures and Algorithms in JavaScript",
     "views": 411
   }
 ]

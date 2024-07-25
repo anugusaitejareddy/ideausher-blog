@@ -3,24 +3,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #c9e4f5;
   height: 75px;
   padding: 0 28px;
-
+  color: hsl(222deg, 22%, 5%);
   position: sticky;
   top: 0;
-  box-shadow: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-    0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
-    1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 
-.headerWrapper ul {
-  display: flex;
-  gap: 16px;
-}
-
-.headerWrapper li {
-  list-style: none;
-  font-size: 1.5rem;
-  font-weight: 600;
+.headerWrapper a {
+  text-decoration: none;
+  color: inherit;
 }

@@ -12,8 +12,14 @@ function BlogCard({ imageURL, title, description, author, views, tags }) {
       </div>
       <span>{author}</span>
       <p>{description}</p>
-      <p>{tags.join(",")}</p>
-      <p>{views} Clicks</p>
+      <div className={styles.blogCardTagsWrapper}>
+        {tags.map((tag, index) => (
+          <span key={index} className={styles.blogCardTags}>
+            {tag}
+          </span>
+        ))}
+      </div>
+      <p>{views} Visits</p>
     </div>
   );
 }

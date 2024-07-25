@@ -1,3 +1,8 @@
+.blogsGridContainer {
+  border: 10px solid red;
+  margin-top: 28px;
+}
+
 .blogSearch {
   width: fit-content;
   display: flex;

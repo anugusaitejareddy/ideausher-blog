@@ -23,27 +23,23 @@ function BlogHero() {
   }
 
   return (
-    <div>
-      <div className={styles.blogHeroWrapper}>
-        <GrPrevious
-          onClick={handlePrevImage}
-          style={{ alignSelf: "center", cursor: "pointer" }}
-        />
-        <div className={styles.heroImagesWrapper}>
-          {heroImages.map((image, index) => (
-            <img
-              key={index}
-              src={image.imageURL}
-              alt=""
-              style={{ flex: index === currentImage ? 1 : 0 }}
-            />
-          ))}
-        </div>
-        <GrNext
-          onClick={handleNextImage}
-          style={{ alignSelf: "center", cursor: "pointer" }}
-        />
+    <div className={styles.blogHeroWrapper}>
+      <GrPrevious
+        className={styles.grPrevious}
+        onClick={handlePrevImage}
+        style={{ alignSelf: "center", cursor: "pointer" }}
+      />
+      <div className={styles.heroImagesWrapper}>
+        {heroImages.map((image, index) => (
+          <div key={index} style={{ flex: index === currentImage ? 1 : 0 }}>
+            <img src={image.imageURL} alt="" />
+          </div>
+        ))}
       </div>
+      <GrNext
+        onClick={handleNextImage}
+        style={{ alignSelf: "center", cursor: "pointer" }}
+      />
     </div>
   );
 }

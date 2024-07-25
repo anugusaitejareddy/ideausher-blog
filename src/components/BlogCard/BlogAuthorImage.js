@@ -4,7 +4,7 @@ function BlogAuthorImage({ author }) {
   return (
     <div
       className={styles.blogAuthorImageWrapper}
-      style={{ backgroundColor: `hsl(${Math.random() * 360}, 70%, 50%)` }}
+      style={{ backgroundColor: "hsl(245deg, 100%, 60%)", color: "" }}
     >
       {author.split("")[0].toUpperCase()}
     </div>

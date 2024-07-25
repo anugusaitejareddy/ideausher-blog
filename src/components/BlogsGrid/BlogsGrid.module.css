@@ -1,9 +1,10 @@
 .blogsGridWrapper {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  gap: 20px;
+  gap: 16px;
   margin: 28px;
+  margin-right: 0;
+  padding: 12px 24px;
 }
 
 .blogsGridWrapper a {
@@ -15,4 +16,9 @@
   display: flex;
   gap: 32px;
   align-items: center;
+  position: sticky;
+  top: 75px;
+
+  background-color: white;
+  padding: 24px 0;
 }

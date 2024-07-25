@@ -1,11 +1,11 @@
 .mostViewedWrapper {
   align-self: start;
-
+  max-width: 250px;
   position: sticky;
   top: 75px;
   z-index: -1;
   margin-top: 200px;
-  padding: 48px 12px;
+  padding: 48px 24px;
 }
 
 .mostViewedWrapper h3 {
@@ -17,7 +17,12 @@
 }
 
 .mostViewedWrapper p {
-  font-size: 22px;
+  font-size: 16px;
   margin-bottom: 10px;
   font-weight: 600;
+}
+
+.mostViewedWrapper a {
+  text-decoration: none;
+  color: inherit;
 }

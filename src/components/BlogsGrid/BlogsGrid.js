@@ -21,17 +21,19 @@ function BlogsGrid() {
   }
 
   function sortBlogs(sortBy) {
+    console.log(sortBy);
     if (sortBy === "mostViewed") {
-      const sortedBlogs = blogs.sort((a, b) => a.views < b.views);
+      console.log("mostViewed if");
+      const sortedBlogs = blogs.sort((a, b) => b.views - a.views);
       setBlogs([...sortedBlogs]);
     } else if (sortBy === "leastViewed") {
-      const sortedBlogs = blogs.sort((a, b) => a.views > b.views);
+      const sortedBlogs = blogs.sort((a, b) => a.views - b.views);
       setBlogs([...sortedBlogs]);
     }
   }
 
   return (
-    <div>
+    <div className={styles.blogsGridContainer}>
       <div className={styles.blogFilterWrapper}>
         <BlogSearch onSearch={searchBlogs} />
         <BlogSort onSort={sortBlogs} />
