@@ -52,12 +52,14 @@ function BlogDetailsPage() {
       <div className={styles.blogDetailsContentContainer}>
         <div className={styles.blogDetailsContent} ref={headingRef}>
           {blog.content.map((data, index) => {
+            const regex = /[\s!$%^&*()_+|~=`{}\\[\]:";'<>?,./]/g;
+
             return (
               <section
                 key={index}
-                id={data.name.toLowerCase().replaceAll(" ", "-")}
+                id={data.name.toLowerCase().replaceAll(regex, "-")}
               >
-                <h2 id={data.name.toLowerCase().replaceAll(" ", "-")}>
+                <h2 id={data.name.toLowerCase().replaceAll(regex, "-")}>
                   {data.name}
                 </h2>
                 {data.subTopicData.map((data, index) => (
@@ -71,7 +73,8 @@ function BlogDetailsPage() {
         <div className={styles.blogDetailsSubHeadings} ref={tocRef}>
           <h2>Table Of contents</h2>
           {blog.content.map((data, index) => {
-            const id = data.name.toLowerCase().replaceAll(" ", "-");
+            const regex = /[\s!$%^&*()_+|~=`{}\\[\]:";'<>?,./]/g;
+            const id = data.name.toLowerCase().replaceAll(regex, "-");
             return (
               <p
                 id={id}
