@@ -8,7 +8,7 @@ function MostViewed() {
       <h3>Popular Content</h3>
       <div>
         {blogsData
-          .sort((a, b) => a.rating > b.rating)
+          .sort((a, b) => a.rating - b.rating)
           .slice(0, 7)
           .map((blog, index) => (
             <p key={index}>
