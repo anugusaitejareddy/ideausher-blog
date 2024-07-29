@@ -4,7 +4,7 @@ import { heroImages } from "../../constants/data";
 import { GrPrevious, GrNext } from "react-icons/gr";
 
 function BlogHero() {
-  const [currentImage, setCurrentImage] = React.useState(0);
+  const [currentImage, setCurrentImage] = React.useState(1);
 
   let imageTransform = [
     { transform: 1 - currentImage },
