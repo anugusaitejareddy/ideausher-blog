@@ -3,12 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #c9e4f5;
+  background-color: hsl(204deg, 67%, 85%);
+  /* background-color: transparent; */
   height: 75px;
   padding: 0 28px;
   color: hsl(222deg, 22%, 5%);
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 
 .headerWrapper a {

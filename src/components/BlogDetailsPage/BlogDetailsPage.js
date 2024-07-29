@@ -1,19 +1,45 @@
 import { useParams } from "react-router-dom";
+import React from "react";
 import blogsData from "../../constants/blogs-data.json";
 import styles from "./BlogDetailsPage.module.css";
 
 function BlogDetailsPage() {
   const { id } = useParams();
   const [blog] = blogsData.filter((blog) => blog.id === parseInt(id));
+  const headingRef = React.useRef();
+  const tocRef = React.useRef();
 
-  function appendHeadingToContent(headings, content) {
-    let res = [...Array(headings.length * 2)];
-    for (let i = 0, j = 0; i < res.length; i += 2, j++) {
-      res[i] = headings[j];
-      res[i + 1] = content[j];
-    }
-    console.log(res);
-    return res;
+  React.useEffect(() => {
+    const options = {
+      root: null,
+      threshold: 0.6,
+      rootMargin: "0px",
+    };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        const subHeadings = tocRef.current;
+        if (entry.isIntersecting) {
+          subHeadings
+            ?.querySelector(`#${entry.target.id}`)
+            .classList.add(styles.active);
+        } else {
+          subHeadings
+            ?.querySelector(`#${entry.target.id}`)
+            .classList.remove(styles.active);
+        }
+      });
+    }, options);
+    const listNode = headingRef.current;
+    const sections = listNode.querySelectorAll("section");
+
+    sections.forEach((element) => observer.observe(element));
+  }, []);
+
+  function handleTOCClick(id) {
+    const sectionList = headingRef.current;
+    const targetNode = sectionList.querySelector(`#${id}`);
+    targetNode.scrollIntoView({ behavior: "smooth" });
+    window.history.pushState(null, null, `#${id}`);
   }
 
   return (
@@ -23,28 +49,51 @@ function BlogDetailsPage() {
         <h1>{blog.title}</h1>
         <p>By {blog.author}</p>
       </div>
-      <div className={styles.blogDetailsContentWrapper}>
-        <div>
-          <img src={blog.imageURL} alt="" />
-          <div className={styles.blogDetailsContent}>
-            {appendHeadingToContent(blog.subHeadings, blog.content).map(
-              (p, index) =>
-                index % 2 === 0 ? (
-                  <h2 id={p.replace(" ", "-")}>{p}</h2>
-                ) : (
-                  <p>{p}</p>
-                )
-            )}
-          </div>
+      <div className={styles.blogDetailsContentContainer}>
+        <div className={styles.blogDetailsContent} ref={headingRef}>
+          {blog.content.map((data, index) => {
+            return (
+              <section
+                key={index}
+                id={data.name.toLowerCase().replaceAll(" ", "-")}
+              >
+                <h2 id={data.name.toLowerCase().replaceAll(" ", "-")}>
+                  {data.name}
+                </h2>
+                {data.subTopicData.map((data, index) => (
+                  <p key={index}>{data}</p>
+                ))}
+              </section>
+            );
+          })}
         </div>
-        {/* <div className={styles.blogDetailsSubHeadings}>
-          {blog.subHeadings.map((subHeading) => (
-            <a href={"#" + subHeading.replace(" ", "-")}>{subHeading}</a>
-          ))}
-        </div> */}
+
+        <div className={styles.blogDetailsSubHeadings} ref={tocRef}>
+          <h2>Table Of contents</h2>
+          {blog.content.map((data, index) => {
+            const id = data.name.toLowerCase().replaceAll(" ", "-");
+            return (
+              <p
+                id={id}
+                key={index}
+                className={styles.subHeadingContentTitle}
+                onClick={() => handleTOCClick(id)}
+              >
+                {data.name}
+              </p>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
 }
 
 export default BlogDetailsPage;
+
+// // "callbacks",
+//       "create your own promises",
+//       "asyn await",
+//       "chaining promises ",
+//       "rejected promises",
+//       "passing data"
