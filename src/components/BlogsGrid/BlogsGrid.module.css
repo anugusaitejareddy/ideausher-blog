@@ -1,3 +1,7 @@
+.blogsGridContainer {
+  background-color: white;
+}
+
 .blogsGridWrapper {
   display: flex;
   flex-wrap: wrap;

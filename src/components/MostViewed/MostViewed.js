@@ -1,6 +1,7 @@
 import blogsData from "../../constants/blogs-data.json";
 import styles from "./MostViewed.module.css";
 import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa6";
 
 function MostViewed() {
   return (
@@ -12,6 +13,7 @@ function MostViewed() {
           .slice(0, 7)
           .map((blog, index) => (
             <p key={index}>
+              <FaArrowRight className={styles.arrowRight} />
               <Link to={`/blog/${blog.id}`}>{blog.title}</Link>
             </p>
           ))}

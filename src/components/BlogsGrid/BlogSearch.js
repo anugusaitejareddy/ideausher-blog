@@ -14,7 +14,7 @@ function BlogSearch({ onSearch }) {
     <div className={styles.blogSearch}>
       <input
         type="search"
-        placeholder="search blogs"
+        placeholder="Search blogs"
         value={searchInput}
         onChange={(e) => handleSearch(e)}
       />

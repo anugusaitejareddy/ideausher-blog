@@ -27,3 +27,13 @@
   color: inherit;
   cursor: pointer;
 }
+
+.arrowRight {
+  margin-right: 10px;
+  color: hsl(245deg, 100%, 60%);
+  transition: transform 100ms ease-out;
+}
+
+.mostViewedWrapper p:hover .arrowRight {
+  transform: translateX(5px);
+}

@@ -6,17 +6,23 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 function BlogHero() {
   const [currentImage, setCurrentImage] = React.useState(0);
 
+  let imageTransform = [
+    { transform: 1 - currentImage },
+    { transform: 2 - currentImage },
+    { transform: 3 - currentImage },
+  ];
+
   function handleNextImage() {
-    if (currentImage === 2) {
-      setCurrentImage(0);
+    if (currentImage === 3) {
+      setCurrentImage(1);
     } else {
       setCurrentImage(currentImage + 1);
     }
   }
 
   function handlePrevImage() {
-    if (currentImage === 0) {
-      setCurrentImage(2);
+    if (currentImage === 1) {
+      setCurrentImage(3);
     } else {
       setCurrentImage(currentImage - 1);
     }
@@ -31,8 +37,16 @@ function BlogHero() {
       />
       <div className={styles.heroImagesWrapper}>
         {heroImages.map((image, index) => (
-          <div key={index} style={{ flex: index === currentImage ? 1 : 0 }}>
-            <img src={image.imageURL} alt="" />
+          <div key={index}>
+            <img
+              src={image.imageURL}
+              alt=""
+              style={{
+                transform: `translateX(${
+                  imageTransform[index].transform * 100
+                }%)`,
+              }}
+            />
           </div>
         ))}
       </div>

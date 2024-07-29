@@ -14,4 +14,10 @@
 
 .blogSearch input {
   padding: 6px;
+  width: 150px;
+  font-size: 1rem;
+}
+
+.blogSearch input:focus {
+  width: 250px;
 }
